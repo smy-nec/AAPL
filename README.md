@@ -5,8 +5,6 @@ Official repository for our paper accepted for presentation in AAAI-25.
 > :page_with_curl:***Action-Agnostic Point-Level Supervision for Temporal Action Detection*** \
 > Shuhei M Yoshida, Takashi Shibata, Makoto Terao, Takayuki Okatani, Masashi Sugiyama
 
-The code will appear soon!
-
 ## Abstract
 
 We propose action-agnostic point-level (AAPL) supervision for temporal action detection
@@ -21,3 +19,11 @@ that the proposed approach is competitive with or outperforms prior methods for 
 in terms of the trade-off between the annotation cost and detection performance.
 The code and the annotation tool used in this study are included in the supplementary material
 and will be made available to the public if our paper is accepted.
+
+## Citation
+
+If you use this code or find it helpful, please cite our paper:
+
+```text
+Yoshida, S. M., Shibata, T., Terao, M., Okatani, T., & Sugiyama, M. (2025). Action-Agnostic Point-Level Supervision for Temporal Action Detection. Proceedings of the AAAI Conference on Artificial Intelligence, 39(9), 9571-9579. https://doi.org/10.1609/aaai.v39i9.33037
+```
