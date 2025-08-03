@@ -1,0 +1,28 @@
+experiment_name: sstad-thumos14-random-3sec
+dataset:
+  dataset_name: THUMOS14
+  dataset_root: /aapl/data/THUMOS14
+  with_sparse_labels: true
+  with_video_labels: false
+  sparse_label_file: sparse-random-3sec.csv
+  temporal_sampler_train: perturbed_uniform
+  temporal_jittering_half_width: 1.0
+model:
+  head:
+    video_loss_weight: 3.0
+    positive_only_video_loss: true
+    contrastive_version: 2
+    contrastive_loss_weight: 0.1
+    contrastive_temperature: 0.1
+    prototype_momentum: 0.001
+    fg_threshold: 1.0
+    bg_threshold: 0.05
+  embedder:
+    groups: 1
+    kernel_size: 3
+optim:
+  learning_rate: 0.0001
+  weight_decay: 0.001
+evaluate_every: 5
+num_epochs: 150
+output_dir: /aapl/outputs/eccv2024
